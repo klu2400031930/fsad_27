@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function LoginRegister({ setUser }) {
   const [id, setId] = useState("");
@@ -71,7 +71,7 @@ export default function LoginRegister({ setUser }) {
         </form>
 
         <p>
-          Don’t have an account? <a href="/register">Register</a>
+          Don’t have an account? <Link to="/register">Register</Link>
         </p>
       </div>
     </div>
